@@ -25,6 +25,7 @@ RUN npm_config_user=root npm install -g full-icu n8n@${N8N_VERSION}
 
 # Install n8n-nodes-python module
 # RUN cd /usr/local/lib/node_modules/n8n && npm install n8n-nodes-python
+RUN cd /usr/local/lib/node_modules/n8n && npm install @aws-sdk/s3-request-presigner
 
 ENV NODE_ICU_DATA /usr/local/lib/node_modules/full-icu
 
